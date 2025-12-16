@@ -42,7 +42,7 @@ def main():
         default="Supersonic",
         help="Mach inversion to find area ratios.",
     )
-    parser.add_argument("--rtol", type=float, default=02, help="Relative tolerance for ideal expansion check.")
+    parser.add_argument("--rtol", type=float, default=0.02, help="Relative tolerance for ideal expansion check.")
     args = parser.parse_args()
 
     exit_conditions = exit_area_relation (args.Ae_At, args.gamma, branch=args.branch)

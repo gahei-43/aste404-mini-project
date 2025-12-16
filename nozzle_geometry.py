@@ -7,7 +7,7 @@ This file calls values from flow_relations.py.
 
 import numpy as np
 
-from flow_relations import (mach_from_area_ratio, pressure_ratio_from_mach,temperature_ratio_from_mach,)
+from flow_relations import (mach_area_relation, pressure_mach_relation, temperature_mach_relation,)
 
 def exit_area_relation(Ae_At, gamma, branch="Supersonic", tol=1e-10, max_iter=200):
     # Calculate the exit conditions when given Ae/At and gamma.

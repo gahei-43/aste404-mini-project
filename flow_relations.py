@@ -37,7 +37,7 @@ def pressure_mach_relation(Mach_number, gamma):
         raise ValueError("Mach number M must be >= 0. Iterate and re-run.")
 
     Mach_number = np.asarray(Mach_number, dtype=float)
-    return (1+(gamma-1)*0.5*M**2)**(-gamma/(gamma-1))
+    return (1+(gamma-1)*0.5*Mach_number**2)**(-gamma/(gamma-1))
 
 def temperature_mach_relation(Mach_number, gamma):
     # T/T0 = [1+(gamma-1)/2*M^2]^(-1)
