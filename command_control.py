@@ -52,18 +52,19 @@ def main():
 
     print("\nExit Condition")
     print(f"Ae/At = {exit_conditions['Ae_At']:.6g}")
-    print(f"Me = {exit_conditions['Me']:.10g}")
+    print(f"Me = {exit_conditions['Mach_exit']:.10g}")
     print(f"pe/p0 = {exit_conditions['pe_p0']:.10g}")
     print(f"Te/T0 = {exit_conditions['Te_T0']:.10g}")
 
-    print("\Analysis")
+    print("Analysis")
     print(f"Regime = {expans}")
     print(f"Note = {note}")
 
     print("\nPerformance")
     print(f"C_F = {C_F:.10g}")
-    if warn:
-        print(warning)
+    if note:
+    	print(note)
+
     print()
 
 if __name__ == "__main__":
